@@ -1,4 +1,4 @@
-package Chapter02.item08;
+package Chapter02.Item08;
 
 public class Client {
 
