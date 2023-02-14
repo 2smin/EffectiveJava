@@ -33,4 +33,13 @@ public class ProteinPowder {
         return result;
 //        return Objects.hash(proteinPer, flavor);
     }
+
+    @Override
+    public String toString() {
+        String str = "ProteinPowder{"
+                + "proteinPer = " + proteinPer + ", "
+                + "flavor = " + flavor + "}";
+
+        return str;
+    }
 }

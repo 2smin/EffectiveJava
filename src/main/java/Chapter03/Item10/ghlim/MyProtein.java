@@ -45,4 +45,14 @@ public class MyProtein {
         result = result + 31 * color.hashCode();
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "MyProtein{" +
+                "proteinPowder=" + proteinPowder +
+                ", name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", color=" + color +
+                '}';
+    }
 }
