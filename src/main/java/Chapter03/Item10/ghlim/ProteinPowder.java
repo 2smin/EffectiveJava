@@ -27,8 +27,8 @@ public class ProteinPowder {
     @Override
     public int hashCode() {
 
-        int result = proteinPer;
-        result = result + flavor.hashCode();
+        int result = Integer.hashCode(proteinPer);
+        result = result + 31 * flavor.hashCode();
 
         return result;
 //        return Objects.hash(proteinPer, flavor);

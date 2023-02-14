@@ -52,7 +52,7 @@ public class MyProtein {
                 "proteinPowder=" + proteinPowder +
                 ", name='" + name + '\'' +
                 ", type='" + type + '\'' +
-                ", color=" + color +
+                ", color=#" + Integer.toHexString(color.getRGB()) +
                 '}';
     }
 }
