@@ -35,4 +35,14 @@ public class MyProtein {
                 && mp.type.equals(type)
                 && mp.color.equals(color);
     }
+
+    @Override
+    public int hashCode() {
+        int result = proteinPowder.hashCode();
+
+        result = result + 31 * name.hashCode();
+        result = result + 31 * type.hashCode();
+        result = result + 31 * color.hashCode();
+        return result;
+    }
 }

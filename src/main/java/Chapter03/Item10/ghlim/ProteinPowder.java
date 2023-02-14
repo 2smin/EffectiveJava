@@ -26,6 +26,11 @@ public class ProteinPowder {
     // auto generate code
     @Override
     public int hashCode() {
-        return Objects.hash(proteinPer, flavor);
+
+        int result = proteinPer;
+        result = result + flavor.hashCode();
+
+        return result;
+//        return Objects.hash(proteinPer, flavor);
     }
 }
