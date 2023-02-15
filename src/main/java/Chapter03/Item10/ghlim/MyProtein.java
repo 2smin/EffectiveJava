@@ -18,6 +18,19 @@ public class MyProtein {
         this.color = color;
     }
 
+    // 복사 생성자
+    public MyProtein(MyProtein that) {
+        proteinPowder = that.proteinPowder;
+        name = that.name;
+        type = that.type;
+        color = that.color;
+    }
+
+    // 복사 팩토리
+    public static MyProtein newInstance(MyProtein that) {
+        return new MyProtein(that.proteinPowder, that.name, that.type, that.color);
+    }
+
     //MP의 protein을 반환 (protein의 정보만 주기 위해)
     public ProteinPowder asProteinPowder() {
         return proteinPowder;

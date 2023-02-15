@@ -2,7 +2,7 @@ package Chapter03.Item10.ghlim;
 
 import java.util.Objects;
 
-public class ProteinPowder {
+public class ProteinPowder implements Cloneable{
 
     private int proteinPer;
     private String flavor;
@@ -41,5 +41,14 @@ public class ProteinPowder {
                 + "flavor = " + flavor + "}";
 
         return str;
+    }
+
+    @Override
+    public ProteinPowder clone() throws CloneNotSupportedException{
+        try {
+            return (ProteinPowder) super.clone();
+        } catch (CloneNotSupportedException e) {
+         throw new AssertionError();
+        }
     }
 }
