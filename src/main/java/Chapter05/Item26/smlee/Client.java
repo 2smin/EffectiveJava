@@ -10,14 +10,43 @@ public class Client {
 
     public static void main(String[] args) {
 
-        arrList.add("a");
-        arrList.add(new Client());
+        numElementTest();
 
-        for(Iterator i = arrList.iterator(); i.hasNext();){
-            String str = (String)i.next();
+    }
+
+    public static void numElementTest(){
+        Set s1 = new HashSet();
+        Set<Integer> s2 = new HashSet();
+        s1.add("a");
+        s1.add(3);
+        s2.add(1);
+        s2.add(3);
+
+
+        System.out.println(numElementsInCommon1(s1,s2));
+        System.out.println(numElementsInCommon2(s1,s2));
+
+
+    }
+
+    public static int numElementsInCommon1(Set s1, Set s2){
+        int result = 0;
+        for(Object o1 : s1){
+            if(s2.contains(o1)){
+                result++;
+            }
         }
-        List<String> strList = new ArrayList<>();
+        return result;
+    }
 
+    public static int numElementsInCommon2(Set<?> s1, Set<?> s2){
+        int result = 0;
+        for(Object o1 : s1){
+            if(s2.contains(o1)){
+                result++;
+            }
+        }
+        return result;
     }
 
     public static void printList1(List<Object> list){
