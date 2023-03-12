@@ -1,0 +1,7 @@
+bus
+car
+airplane
+iphone
+iphone
+airplane
+airplane
