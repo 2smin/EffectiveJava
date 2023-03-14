@@ -1,4 +1,4 @@
-package Chapter07.Item47;
+package Chapter07.Item47.smlee;
 
 import java.util.*;
 

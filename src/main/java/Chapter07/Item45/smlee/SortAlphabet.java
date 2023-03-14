@@ -1,8 +1,7 @@
-package Chapter07.Item45;
+package Chapter07.Item45.smlee;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class SortAlphabet {
 

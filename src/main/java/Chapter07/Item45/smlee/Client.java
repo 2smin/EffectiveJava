@@ -1,4 +1,4 @@
-package Chapter07.Item45;
+package Chapter07.Item45.smlee;
 
 import java.util.Arrays;
 import java.util.stream.DoubleStream;

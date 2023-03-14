@@ -1,14 +1,12 @@
-package Chapter07.Item46;
+package Chapter07.Item46.smlee;
 
-import Chapter06.Item38.smlee.Operation;
-import Chapter07.Item45.Anagrams;
+import Chapter07.Item45.smlee.Anagrams;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.function.BinaryOperator;
-import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
