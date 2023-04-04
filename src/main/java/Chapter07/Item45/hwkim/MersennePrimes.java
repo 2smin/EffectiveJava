@@ -12,9 +12,12 @@ public class MersennePrimes {
     }
 
     public static void main(String[] args) {
+        long beforeTime = System.currentTimeMillis();
         primes().map(p -> TWO.pow(p.intValueExact()).subtract(ONE))
                 .filter(mersenne -> mersenne.isProbablePrime(50))
                 .limit(20)
                 .forEach(mp -> System.out.println(mp.bitLength() + ": " + mp));
+        long afterTime = System.currentTimeMillis();
+        System.out.println((afterTime - beforeTime));
     }
 }
