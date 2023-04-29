@@ -3,6 +3,7 @@ package Chapter09.Item59.ghlim;
 import java.util.Collection;
 import java.util.EnumSet;
 import java.util.Iterator;
+import java.util.concurrent.CountDownLatch;
 
 public class Client {
     enum Face { ONE, TWO, THREE, FOUR, FIVE, SIX }
